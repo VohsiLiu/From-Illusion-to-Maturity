@@ -1,0 +1,38 @@
+\documentclass{FromIllusiontoMaturity}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\renewcommand*{\songti}{\CJKfamily{zhsong}}
+\renewcommand*{\heiti}{\CJKfamily{zhhei}}
+\renewcommand*{\kaishu}{\CJKfamily{zhkai}}
+\renewcommand*{\fangsong}{\CJKfamily{zhfs}}
+
+\begin{document}
+    \include{封面/封面}
+
+    % 目录
+    \setcounter{secnumdepth}{0}
+    \pagestyle{tocstyle}
+    \pagenumbering{Roman}
+    \tableofcontents
+    \cleardoublepage
+    \setcounter{secnumdepth}{1}
+    \renewcommand{\thesection}{}
+
+    % 正文
+    \pagestyle{docstyle}
+    \pagenumbering{arabic}
+    \setcounter{page}{1}
+
+    \include{chapter/0前言} \cleardoublepage
+    \include{chapter/1走向交易者之路} \cleardoublepage
+    \include{chapter/2概念解释} \cleardoublepage
+    \include{chapter/3基本分析} \cleardoublepage
+    \include{chapter/4技术分析} \cleardoublepage
+    \include{chapter/5雕虫小技} \cleardoublepage
+    \include{chapter/6系统之路} \cleardoublepage
+    \include{chapter/7资金管理} \cleardoublepage
+    \include{chapter/8对交易本质的思考} \cleardoublepage
+    \include{chapter/9论坛文集} \cleardoublepage
+    \include{chapter/10结束语} \cleardoublepage
+
+\end{document}
